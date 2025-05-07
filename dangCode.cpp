@@ -107,7 +107,7 @@ private:
     alignas(std::hardware_destructive_interference_size) size_t tail_tmp_ = 0;
     alignas(std::hardware_destructive_interference_size) size_t head_tmp_ = 0;
 
-    alignas(std::hardware_destructive_interference_size) std::atomic<size_t> head_ = { 0 };//����������� ����
+    alignas(std::hardware_destructive_interference_size) std::atomic<size_t> head_ = { 0 };
     alignas(std::hardware_destructive_interference_size) std::atomic<size_t> tail_ = { 0 };
 };
 
