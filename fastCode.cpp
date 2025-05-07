@@ -18,7 +18,7 @@ public:
 
         size_t curr_tail = tail_.load(std::memory_order_relaxed);
         size_t curr_head = head_.load(std::memory_order_acquire);
-        size_t next_tail = get_next(curr_tail);//������� ������������� ����������
+        size_t next_tail = get_next(curr_tail);
 
         if (next_tail == curr_head) {
             return false;
